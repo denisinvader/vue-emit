@@ -1,0 +1,22 @@
+{
+  "name": "vue-emit",
+  "version": "1.0.0",
+  "main": "dist/vue-emit.min.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env BABEL_ENV=build node build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.44",
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/node": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^22.4.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "cross-env": "^5.1.6",
+    "rollup": "^0.57.1",
+    "rollup-plugin-babel": "^4.0.0-beta.4",
+    "rollup-plugin-uglify": "^3.0.0"
+  }
+}

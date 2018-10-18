@@ -3,6 +3,16 @@
   "version": "1.0.0",
   "main": "dist/vue-emit.min.js",
   "license": "MIT",
+  "keywords": ["vue", "events", "emit"],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/denisinvader/vue-emit"
+  },
+  "bugs": {
+    "url" : "https://github.com/denisinvader/vue-emit/issues",
+    "email" : "denis.invader@gmail.com"
+  },
+  "author": "Mikhail Panichev <denis.invader@gmail.com>",
   "scripts": {
     "build": "cross-env BABEL_ENV=build node build"
   },

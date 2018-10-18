@@ -1,16 +1,20 @@
 {
   "name": "vue-emit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/vue-emit.min.js",
   "license": "MIT",
-  "keywords": ["vue", "events", "emit"],
+  "keywords": [
+    "vue",
+    "events",
+    "emit"
+  ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/denisinvader/vue-emit"
+    "type": "git",
+    "url": "https://github.com/denisinvader/vue-emit"
   },
   "bugs": {
-    "url" : "https://github.com/denisinvader/vue-emit/issues",
-    "email" : "denis.invader@gmail.com"
+    "url": "https://github.com/denisinvader/vue-emit/issues",
+    "email": "denis.invader@gmail.com"
   },
   "author": "Mikhail Panichev <denis.invader@gmail.com>",
   "scripts": {

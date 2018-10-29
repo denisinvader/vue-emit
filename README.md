@@ -1,4 +1,6 @@
 # Vue emit
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdenisinvader%2Fvue-emit.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdenisinvader%2Fvue-emit?ref=badge_shield)
+
 
 Helper function to emit events from Vue.js functional components. Can be used in regular components too.
 
@@ -38,3 +40,7 @@ emit(handlers_list, event_name, [optional_payload]);
 - `event_name` - name of the event to fire. The event may not be defined in the handlers list: in this case `emit` does nothing and do not throws an error (what is very handy)
 
 - `optional_payload` - any amount of parameters that will be passed as arguments to the callback.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdenisinvader%2Fvue-emit.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdenisinvader%2Fvue-emit?ref=badge_large)

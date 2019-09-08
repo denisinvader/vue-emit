@@ -1,4 +1,4 @@
-# master
+# v1.1.0
 
 - build script updated;
 - removed unnecessary dev dependencies;

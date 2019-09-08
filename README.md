@@ -1,6 +1,7 @@
 # Vue emit
 
-Helper function to emit events from Vue.js functional components. Can be used in regular components too.
+Helper function to emit events from Vue.js functional components. Can be used in regular components too. 
+[CodeSandbox demo](https://codesandbox.io/s/71pnzj8qrq)
 
 ## Installation
 

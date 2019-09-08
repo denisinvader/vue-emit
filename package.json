@@ -20,7 +20,9 @@
   "scripts": {
     "lint": "eslint .",
     "test": "tape emit.test.js",
-    "build": "rm -rf dist && rollup -c"
+    "build": "rm -rf dist && rollup -c",
+    "prepublishOnly": "yarn lint && yarn test && yarn build",
+    "postpublish": "git push && git push --tags"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",

@@ -18,9 +18,12 @@
   },
   "author": "Mikhail Panichev <denis.invader@gmail.com>",
   "scripts": {
+    "lint": "eslint .",
     "build": "rm -rf dist && rollup -c"
   },
   "devDependencies": {
+    "@ubic/eslint-config": "^1.1.0",
+    "eslint": "^6.3.0",
     "rollup": "^0.57.1",
     "rollup-plugin-uglify": "^3.0.0"
   }

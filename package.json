@@ -22,9 +22,12 @@
     "build": "rm -rf dist && rollup -c"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
     "@ubic/eslint-config": "^1.1.0",
     "eslint": "^6.3.0",
-    "rollup": "^0.57.1",
-    "rollup-plugin-uglify": "^3.0.0"
+    "rollup": "^1.21.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-uglify": "^6.0.3"
   }
 }

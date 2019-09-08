@@ -1,4 +1,5 @@
-const uglify = require('rollup-plugin-uglify');
+const babel = require('rollup-plugin-babel');
+const { uglify } = require('rollup-plugin-uglify');
 const meta = require('./package.json');
 
 const config = {
@@ -8,7 +9,9 @@ const config = {
     name: meta.name,
     format: 'umd',
   },
-  plugins: [],
+  plugins: [
+    babel(),
+  ],
 };
 
 module.exports = [

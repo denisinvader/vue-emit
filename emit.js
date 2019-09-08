@@ -1,23 +1,21 @@
-function emit (handlers = {}, eventName = '', ...params) {
-  if (typeof handlers !== 'object') {
+const isFunction = obj => typeof obj === 'function';
+
+const emit = function vueEmit (handlers, eventName, ...params) {
+  if ((typeof handlers !== 'object') || (typeof eventName !== 'string')) {
     return;
   }
 
-  if (eventName in handlers) {
-    const handler = handlers[eventName];
+  const handler = handlers[eventName];
 
-    if (typeof handler === 'function') {
-      handler(...params);
-    } else if (typeof handler === 'object' && handler instanceof Array) {
-      for (let i = 0; i < handler.length; i++) {
-        if (typeof handler[i] !== 'function') {
-          continue;
-        }
-
-        handler[i](...params);
+  if (isFunction(handler)) {
+    handler(...params);
+  } else if (Array.isArray(handler)) {
+    handler.forEach(handlerFunction => {
+      if (isFunction(handlerFunction)) {
+        handlerFunction(...params);
       }
-    }
+    });
   }
-}
+};
 
 module.exports = emit;
